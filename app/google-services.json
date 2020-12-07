@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "384457253403",
+    "project_id": "financeiro-df308",
+    "storage_bucket": "financeiro-df308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384457253403:android:7a18c651084db03d6a8ebe",
+        "android_client_info": {
+          "package_name": "com.example.financial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384457253403-puhc9vgi4ukcfio5r4nnvilei689g07p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJwTB4hVQUqqxGjXLMcHFw6UNVEhPUg_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384457253403-puhc9vgi4ukcfio5r4nnvilei689g07p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
