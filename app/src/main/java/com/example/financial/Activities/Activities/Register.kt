@@ -7,7 +7,9 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ListView
 import android.widget.Toast
+import com.example.financial.Activities.Activities.Models.Valor
 import com.example.financial.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -21,7 +23,11 @@ class Register : AppCompatActivity() {
     private lateinit var registerPassword: EditText
     private lateinit var registerSave: Button
     private lateinit var registerName: EditText
-    private lateinit var registerCode: EditText
+    private lateinit var registerUsuario: EditText
+    private lateinit var registerPhone: EditText
+
+    private lateinit var registerGastos: MutableList<Valor>
+    private lateinit var registerGanhos: MutableList<Valor>
 
     private lateinit var auth: FirebaseAuth
     private lateinit var database: FirebaseDatabase
@@ -37,7 +43,9 @@ class Register : AppCompatActivity() {
         registerEmail = findViewById(R.id.register_edittext_email)
         registerPassword = findViewById(R.id.register_edittext_password)
         registerName = findViewById(R.id.register_edittext_Name)
-        registerCode = findViewById(R.id.register_edittext_code)
+        registerUsuario = findViewById(R.id.register_edittext_usuario)
+        registerPhone = findViewById(R.id.register_edittext_phone)
+
 
         registerSave = findViewById(R.id.register_button_signon)
         registerSave.setOnClickListener {
@@ -59,14 +67,16 @@ class Register : AppCompatActivity() {
                 val email = registerEmail.text.toString()
                 val password = registerPassword.text.toString()
                 val name = registerName.text.toString()
-                val code = registerCode.text.toString()
-                val score = 0
+                val numero = registerPhone.text.toString()
+                val usuario = registerUsuario.text.toString()
+                val gastos = registerGastos
+                val ganhos = registerGanhos
 
                 auth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
 
-                            val user = User(email, password, name, score , code)
+                            val user = User(email, password, name, usuario, numero, gastos, ganhos)
 
                             val userRef = database.reference.child("user")
                             userRef.child(auth.currentUser?.uid!!).setValue(user)

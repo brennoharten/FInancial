@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Activities.Register">
+    tools:context=".Activities.Activities.Register">
 
     <EditText
         android:id="@+id/register_edittext_password"
@@ -41,7 +41,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="#1FCD47"
+        android:backgroundTint="#2B1FCD"
         android:text="Cadastrar"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#FFFFFF"
@@ -49,7 +49,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_edittext_code"
+        app:layout_constraintTop_toBottomOf="@+id/register_edittext_usuario"
         app:rippleColor="#1FCD47" />
 
     <EditText
@@ -79,28 +79,37 @@
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/register_button_signon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_edittext_password"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/register_edittext_password" />
 
     <EditText
-        android:id="@+id/register_edittext_code"
+        android:id="@+id/register_edittext_phone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:hint="Código do condôminio"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/register_button_signon"
+        android:hint="telefone"
+        android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_edittext_Name"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/register_edittext_Name" />
+
+    <EditText
+        android:id="@+id/register_edittext_usuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_edittext_phone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

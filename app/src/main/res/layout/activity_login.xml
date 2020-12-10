@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Activities.Login">
+    tools:context=".Activities.Activities.Login">
 
     <EditText
         android:id="@+id/login_edittext_password"
@@ -75,7 +75,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="#1FCD47"
+        android:backgroundTint="#2B1FCD"
         android:shadowColor="#FFFFFF"
         android:text="Entrar"
         app:iconTint="#1FCD47"

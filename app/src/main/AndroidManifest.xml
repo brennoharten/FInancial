@@ -11,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Financial">
-        <activity android:name=".Activities.Activities.Register"/>
-        <activity android:name=".Activities.Activities.Login" >
+        <activity android:name=".Activities.Activities.Ganhos"></activity>
+        <activity android:name=".Activities.Activities.Gastos" />
+        <activity android:name=".Activities.Activities.Register" />
+        <activity android:name=".Activities.Activities.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
