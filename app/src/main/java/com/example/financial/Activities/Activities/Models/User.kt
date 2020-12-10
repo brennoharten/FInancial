@@ -10,6 +10,6 @@ data class User(
     val name: String = "",
     val usuario: String = "",
     val numero: String = "",
-    val gastos: MutableList<Valor>,
-    val ganhos: MutableList<Valor>
+    val gastos: MutableList<Valor>?,
+    val ganhos: MutableList<Valor>?
 )

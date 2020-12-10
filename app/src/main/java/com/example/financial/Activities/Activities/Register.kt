@@ -26,8 +26,8 @@ class Register : AppCompatActivity() {
     private lateinit var registerUsuario: EditText
     private lateinit var registerPhone: EditText
 
-    private lateinit var registerGastos: MutableList<Valor>
-    private lateinit var registerGanhos: MutableList<Valor>
+    private var registerGastos: MutableList<Valor>? = null
+    private var registerGanhos: MutableList<Valor>? = null
 
     private lateinit var auth: FirebaseAuth
     private lateinit var database: FirebaseDatabase
